@@ -20,19 +20,23 @@ class ArticlesController extends AbstractController
 
         $comments = Comment::getComments($articleId);
 
+        if(empty($comments)) {
+            $message = 'Комментариев нету :)';
+        }
+
         if($article === null) {
             throw new NotFoundException();
         }
 
-        if($this->user === null) {
-            $notAuthorized = true;
+        if($this->user !== null) {
+            $authorized = true;
         } else {
-            $notAuthorized = false;
+            $authorized = false;
         }
 
         $title = $article->getName();
 
-        $this->view->renderHtml('articles/view.php', ['article' => $article, 'title' => $title, 'comments' => $comments, 'notAuthorized' => $notAuthorized]);
+        $this->view->renderHtml('articles/view.php', ['article' => $article, 'title' => $title, 'comments' => $comments, 'authorized' => $authorized, 'message' => $message]);
     }
 
     public function edit(int $articleId): void

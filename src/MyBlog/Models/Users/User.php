@@ -45,6 +45,8 @@ class User extends ActiveRecordEntity
         return $this->role === 'admin';
     }
 
+//    public function
+
     // Подтверждение пользователя
     public function activate(): void
     {

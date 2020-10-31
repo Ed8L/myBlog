@@ -14,7 +14,7 @@
     <div class="leave-comment mt-5">
         <h2>Комментарии</h2>
 
-        <?php if (!$notAuthorized): ?>
+        <?php if ($authorized): ?>
             <form action="/articles/<?= $article->getId() ?>/add" method="POST">
                 <div class="form-group">
                     <label for="text">Оставить комментарий</label>
@@ -29,6 +29,7 @@
     </div>
 
     <div class="card mt-4">
+        <h5 style="padding: 8px 0 0 8px;"> <?= $message ? $message : '' ?> </h5>
         <?php foreach ($comments as $comment): ?>
             <div class="card-body">
                 <a name="comment<?= $comment->getId() ?>"></a>
@@ -38,7 +39,9 @@
                 </div>
 
                 <?= $comment->getText() ?>
-                <a href="/articles/<?= $comment->getArticleId() ?>/comment/<?= $comment->getId() ?>/delete">Удалить</a>
+                <?php if ( $authorized && ($user->getId() == $comment->getUserId() || $user->isAdmin()) ): ?>
+                    <a href="/articles/<?= $comment->getArticleId() ?>/comment/<?= $comment->getId() ?>/delete">Удалить</a>
+                <?php endif; ?>
             </div>
             <hr style="background-color:#fff;">
         <?php endforeach; ?>

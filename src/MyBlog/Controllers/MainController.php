@@ -6,7 +6,6 @@
 namespace MyBlog\Controllers;
 
 use MyBlog\Models\Articles\Article;
-use MyBlog\Services\UsersAuthService;
 
 class MainController extends AbstractController
 {
