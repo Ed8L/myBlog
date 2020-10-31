@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("/img/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 13px;
+}
+
+*{
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.hello {
+    display: flex;
+}
+
+.text-muted {
+    color: #c3cacd !important;
+}
+
+.card, .leave-comment, footer {
+    background-color: #343A40;
+}
+
+input, textarea {
+    color: #000;
+}
+
+.leave-comment {
+    padding: 20px;
+}
+.footer-text {
+    padding-top: 20px;
+}
+
+.container {
+    padding: 40px;
+}
+
+.admin-panel h4 {
+    color: #000;
+}
+
+.editForm {
+    display: none;
+}
+
+.edit {
+    display: block;
+}
+
+@media (max-height: 568px) {
+    body {
+        padding-top: 53px;
+        padding-bottom: 60px;
+    }
+}
