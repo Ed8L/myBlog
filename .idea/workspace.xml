@@ -4,18 +4,11 @@
     <list default="true" id="155a6a28-1cea-44ce-8f50-15d4ca524f4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyBlog/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Controllers/UsersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyBlog/Models/Users/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Models/Users/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/articles/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/articles/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/articles/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/articles/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/articles/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/articles/view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/errors/401.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/errors/401.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/signUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/signUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/users/signupSuccessful.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/signupSuccessful.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/img/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/img/avatar.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/www/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +57,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -110,7 +103,7 @@
       <workItem from="1604153134676" duration="1679000" />
       <workItem from="1604156238205" duration="5347000" />
       <workItem from="1604209475766" duration="636000" />
-      <workItem from="1604229496707" duration="1910000" />
+      <workItem from="1604229496707" duration="9632000" />
     </task>
     <servers />
   </component>

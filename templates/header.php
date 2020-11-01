@@ -13,7 +13,6 @@
 </head>
 <body>
 
-
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="/">Мой блог</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"

@@ -58,7 +58,34 @@ class UsersController extends AbstractController
         if($this->user === null) {
             throw new UnauthorizedException();
         }
+
+        if(!empty($_FILES['avatar'])) {
+            $this->uploadAvatar($_FILES['avatar']);
+        }
+
         $this->view->renderHtml('users/profile.php');
+    }
+
+    private function uploadAvatar(array $file)
+    {
+        $result = false;
+        if ($file['error'] !== UPLOAD_ERR_OK) {
+            return $result = 'Ошибка при загрузке файла.';
+        } elseif($file['error'] === UPLOAD_ERR_NO_FILE) {
+            return $result = 'Файл не выбран!';
+        }
+
+        $srcFileName = $file['name'];
+        $extension = pathinfo($srcFileName, PATHINFO_EXTENSION);
+        $userName = $this->user->getNickname();
+
+        $avatarPath = __DIR__ . '/../../../www/img/' . $userName . '.jpg';
+
+        if ( move_uploaded_file($file['tmp_name'], $avatarPath) ) {
+            $result = $avatarPath;
+        }
+
+        return $result;
     }
 
     public function login()

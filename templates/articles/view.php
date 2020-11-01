@@ -31,17 +31,37 @@
     <div class="card mt-4">
         <h5 style="padding: 8px 0 0 8px;"> <?= $message ? $message : '' ?> </h5>
         <?php foreach ($comments as $comment): ?>
+<!--            <div class="card-body d-flex">-->
+<!--                <div style="display: inline-block" class="avatar">-->
+<!--
+<!--                </div>-->
+<!---->
+<!---->
+<!--                <div class="title d-flex">-->
+<!--
+<!--                </div>-->
+<!--                <p>--><!--</p>-->
+<!--                --><?php //if ( $authorized && ($user->getId() == $comment->getUserId() || $user->isAdmin()) ): ?>
+<!--                    <a href="/articles/--><?//= $comment->getArticleId() ?><!--/comment/--><?//= $comment->getId() ?><!--/delete">Удалить</a>-->
+<!--                --><?php //endif; ?>
+<!---->
+<!--            </div>-->
             <div class="card-body">
-                <a name="comment<?= $comment->getId() ?>"></a>
                 <div class="title d-flex">
-                    <p>Автор: <?= $comment->getAuthor() ?></p>
-                    <span class="ml-auto">Дата: <?= $comment->getCreatedAt() ?></span>
+
+                    <div class="avatar">
+                        <img src="/img/<?= $comment->getAuthor() ?>.jpg" alt="Аватар" width="110" height="110">
+                    </div>
+
+                    <div class="comment-info">
+                        <a name="comment<?= $comment->getId() ?>"></a>
+                        <p>Автор: <?= $comment->getAuthor() ?></p>
+                        <span class="ml-auto">Дата: <?= $comment->getCreatedAt() ?></span>
+                    </div>
+
                 </div>
 
-                <?= $comment->getText() ?>
-                <?php if ( $authorized && ($user->getId() == $comment->getUserId() || $user->isAdmin()) ): ?>
-                    <a href="/articles/<?= $comment->getArticleId() ?>/comment/<?= $comment->getId() ?>/delete">Удалить</a>
-                <?php endif; ?>
+                <p class="comment"><?= $comment->getText() ?></p>
             </div>
             <hr style="background-color:#fff;">
         <?php endforeach; ?>
