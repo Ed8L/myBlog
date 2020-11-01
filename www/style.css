@@ -55,6 +55,10 @@ input, textarea {
     display: block;
 }
 
+.info {
+    margin-left: 10px;
+}
+
 @media (max-height: 568px) {
     body {
         padding-top: 53px;

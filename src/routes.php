@@ -19,6 +19,7 @@ return [
     '~^users/(\d+)/activate/(.+)$~' => [\MyBlog\Controllers\UsersController::class, 'activate'],
     '~^users/login$~' => [\MyBlog\Controllers\UsersController::class, 'login'],
     '~^users/logout$~' => [\MyBlog\Controllers\UsersController::class, 'logout'],
+    '~^profile$~' => [\MyBlog\Controllers\UsersController::class, 'profile'],
 
     //Админ панель
     '~^admin$~' => [\MyBlog\Controllers\AdminController::class, 'index'],

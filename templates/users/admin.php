@@ -1,5 +1,5 @@
 <?php include __DIR__ . '/../header.php'; ?>
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <a href="/articles/add" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Добавить
                 статью</a>

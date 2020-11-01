@@ -1,5 +1,5 @@
 <?php include __DIR__ . '/../header.php'; ?>
-<div class="card mt-2">
+<div class="card">
     <div class="card-body">
         <h4>Добавить статью</h4>
 

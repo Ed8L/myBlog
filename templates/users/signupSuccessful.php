@@ -1,5 +1,5 @@
 <?php include __DIR__ . '/../header.php'; ?>
-<div class="card mt-5 text-center">
+<div class="card text-center">
     <div class="card-body">
         <h1>Регистрация прошла успешно!</h1>
         Ссылка для активации вашей учетной записи отправлена вам на email.

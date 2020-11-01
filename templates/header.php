@@ -26,8 +26,12 @@
             <span class="navbar-text">
                 Привет, <?= $user->getNickname() ?> |
                 <?php if($user->isAdmin()): ?>
-                    <a href="/admin">Админка</a>
+                    <a href="/admin">Админка</a> |
                 <?php endif ?>
+
+                <?php if($user): ?>
+                    <a href="/profile">Профиль</a>
+                <?php endif?>
             </span>
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -43,4 +47,4 @@
         <?php endif ?>
     </div>
 </nav>
-<div class="container">
+<div class="container mt-5">

@@ -45,7 +45,11 @@ class User extends ActiveRecordEntity
         return $this->role === 'admin';
     }
 
-//    public function
+    public function getCreatedAt(): string
+    {
+        $date = date_create($this->createdAt);
+        return date_format($date, 'd-m-Y');
+    }
 
     // Подтверждение пользователя
     public function activate(): void

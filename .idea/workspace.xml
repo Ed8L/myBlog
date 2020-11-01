@@ -3,11 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="155a6a28-1cea-44ce-8f50-15d4ca524f4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyBlog/Controllers/ArticlesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Controllers/ArticlesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyBlog/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyBlog/Models/Comments/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Models/Comments/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyBlog/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Controllers/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyBlog/Models/Users/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Models/Users/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/articles/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/articles/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/articles/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/articles/edit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/articles/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/articles/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/errors/401.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/errors/401.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/signUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/signUp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/users/signupSuccessful.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/users/signupSuccessful.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test/index.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -60,9 +69,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\myblog\www\img" />
       <recent name="C:\OpenServer\domains\myblog\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OpenServer\domains\myblog\www\img" />
       <recent name="C:\OpenServer\domains\myblog\www" />
     </key>
   </component>
@@ -97,7 +108,9 @@
       <workItem from="1604073954015" duration="14832000" />
       <workItem from="1604127587788" duration="9108000" />
       <workItem from="1604153134676" duration="1679000" />
-      <workItem from="1604156238205" duration="4179000" />
+      <workItem from="1604156238205" duration="5347000" />
+      <workItem from="1604209475766" duration="636000" />
+      <workItem from="1604229496707" duration="1910000" />
     </task>
     <servers />
   </component>

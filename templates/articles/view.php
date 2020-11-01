@@ -1,5 +1,5 @@
 <?php include __DIR__ . '/../header.php'; ?>
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <div class="title d-flex">
                 <h5 class="card-title"> <?= $article->getName() ?> </h5>

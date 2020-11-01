@@ -1,5 +1,5 @@
 <?php include __DIR__ . '/../header.php'; ?>
-<div class="card mt-5">
+<div class="card">
     <div class="card-body text-center">
 
         <h1>Регистрация</h1>

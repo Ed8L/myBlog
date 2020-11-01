@@ -4,6 +4,7 @@ namespace MyBlog\Controllers;
 
 use MyBlog\Exceptions\InvalidArgumentException;
 use MyBlog\Exceptions\NotFoundException;
+use MyBlog\Exceptions\UnauthorizedException;
 use MyBlog\Models\Users\User;
 use MyBlog\Models\Users\UserActivationService;
 use MyBlog\Services\EmailSender;
@@ -52,6 +53,14 @@ class UsersController extends AbstractController
         }
     }
 
+    public function profile()
+    {
+        if($this->user === null) {
+            throw new UnauthorizedException();
+        }
+        $this->view->renderHtml('users/profile.php');
+    }
+
     public function login()
     {
         if (!empty($_POST)) {
@@ -75,6 +84,5 @@ class UsersController extends AbstractController
             header('Location: /');
             exit();
         }
-
     }
 }

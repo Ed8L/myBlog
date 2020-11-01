@@ -4,7 +4,7 @@
  */
 
 include __DIR__ . '/../header.php'; ?>
-    <div class="card mt-3">
+    <div class="card">
         <div class="card-body">
             <h4>Редактирование статьи</h4>
 
