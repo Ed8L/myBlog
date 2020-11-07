@@ -2,6 +2,7 @@
 
 namespace MyBlog\Controllers;
 
+use Intervention\Image\ImageManager;
 use MyBlog\Exceptions\InvalidArgumentException;
 use MyBlog\Exceptions\NotFoundException;
 use MyBlog\Exceptions\UnauthorizedException;
@@ -68,24 +69,10 @@ class UsersController extends AbstractController
 
     private function uploadAvatar(array $file)
     {
-        $result = false;
-        if ($file['error'] !== UPLOAD_ERR_OK) {
-            return $result = 'Ошибка при загрузке файла.';
-        } elseif($file['error'] === UPLOAD_ERR_NO_FILE) {
-            return $result = 'Файл не выбран!';
-        }
-
-        $srcFileName = $file['name'];
-        $extension = pathinfo($srcFileName, PATHINFO_EXTENSION);
-        $userName = $this->user->getNickname();
-
-        $avatarPath = __DIR__ . '/../../../www/img/' . $userName . '.jpg';
-
-        if ( move_uploaded_file($file['tmp_name'], $avatarPath) ) {
-            $result = $avatarPath;
-        }
-
-        return $result;
+        $manager = new ImageManager(array('driver' => 'imagick'));
+        $img = $manager->make($file['tmp_name']);
+        $img->fit(200, 200);
+        $img->save(__DIR__.'/../../../www/img/' . $this->user->getNickname() . '.jpg');
     }
 
     public function login()
