@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="155a6a28-1cea-44ce-8f50-15d4ca524f4d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyBlog/Controllers/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyBlog/Controllers/UsersController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -28,6 +30,15 @@
     <servers>
       <server host="localhost" id="9ae8af85-9d09-41be-935a-0c13269ceb58" name="localhost" />
     </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1jPTXtQYInoRbc9jJXzX90yVSee" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -99,6 +110,7 @@
       <workItem from="1604229496707" duration="9632000" />
       <workItem from="1604741202912" duration="47000" />
       <workItem from="1604741266021" duration="6000" />
+      <workItem from="1604742896915" duration="1065000" />
     </task>
     <servers />
   </component>

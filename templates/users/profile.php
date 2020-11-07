@@ -16,6 +16,7 @@
             </div>
 
             <div class="options ml-auto">
+                <?= $result? $result: '' ?>
                 <form action="/profile" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="avatar">Загрузить аватар</label>

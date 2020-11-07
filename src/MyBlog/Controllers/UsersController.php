@@ -56,23 +56,33 @@ class UsersController extends AbstractController
 
     public function profile()
     {
-        if($this->user === null) {
+        if ($this->user === null) {
             throw new UnauthorizedException();
         }
 
-        if(!empty($_FILES['avatar'])) {
-            $this->uploadAvatar($_FILES['avatar']);
+        if (!empty($_FILES['avatar'])) {
+            $result = $this->uploadAvatar($_FILES['avatar']);
         }
 
-        $this->view->renderHtml('users/profile.php');
+        $this->view->renderHtml('users/profile.php', ['result' => $result]);
     }
 
     private function uploadAvatar(array $file)
     {
+        $allowedExtensions = ['jpg', 'png'];
+        $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
+        if(!in_array($extension, $allowedExtensions)) {
+            $error = 'Можно загрузить только файлы с расширением: ';
+            foreach ($allowedExtensions as $allowedExtension) {
+                 $error .= $allowedExtension . ' ';
+            }
+            return $error;
+        }
+
         $manager = new ImageManager(array('driver' => 'imagick'));
         $img = $manager->make($file['tmp_name']);
         $img->fit(200, 200);
-        $img->save(__DIR__.'/../../../www/img/' . $this->user->getNickname() . '.jpg');
+        $img->save(__DIR__ . '/../../../www/img/' . $this->user->getNickname() . '.jpg');
     }
 
     public function login()
